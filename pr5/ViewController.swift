@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
     
     @IBOutlet weak var countryData: UITableView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var array : [WelcomeElement] = []
+    var search : [WelcomeElement] = []
     override func viewDidLoad() {
         super.viewDidLoad()
        getapi()
@@ -26,6 +28,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             do{
                 if error == nil{
                     self.array = try JSONDecoder().decode([WelcomeElement].self, from: data!)
+                    self.search = self.array
                     DispatchQueue.main.async {
                         self.countryData.reloadData()
                     }
@@ -72,6 +75,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         naviget.commonName = commonname
         naviget.image2 = image
         navigationController?.pushViewController(naviget, animated: true)
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == ""
+        {
+            array = search
+        }
+        else{
+            array = search.filter({ i in
+                return i.name.common.contains(searchBar.text!)
+            })
+        }
+        countryData.reloadData()
     }
 
 }
