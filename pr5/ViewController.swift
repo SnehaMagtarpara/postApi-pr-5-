@@ -61,14 +61,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
          return UIImage(data: data!)
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigation(flagimage: StringToImg(link: array[indexPath.row].flags.png)!, commonname: array[indexPath.row].name.official, officialname: array[indexPath.row].name.common)
+        navigation(flagimage: StringToImg(link: array[indexPath.row].flags.png)!, commonname: array[indexPath.row].name.common, population: array[indexPath.row].population, image:StringToImg(link: array[indexPath.row].coatOfArms.png!)!)
+
     }
-    func navigation (flagimage:UIImage,commonname:String,officialname:String)
+    func navigation (flagimage:UIImage,commonname:String,population:Int,image:UIImage)
     {
         let naviget = storyboard?.instantiateViewController(withIdentifier: "ViewController2") as! ViewController2
         naviget.image = flagimage
-        naviget.officialname = officialname
+        naviget.population = population
         naviget.commonName = commonname
+        naviget.image2 = image
         navigationController?.pushViewController(naviget, animated: true)
     }
 

@@ -83,46 +83,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1My-NH-aes">
-                                <rect key="frame" x="20" y="59" width="374" height="211"/>
+                                <rect key="frame" x="20" y="94" width="374" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="211" id="74d-dB-667"/>
+                                    <constraint firstAttribute="height" constant="220" id="zoJ-Ab-zq9"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ST-Fq-Jjr">
-                                <rect key="frame" x="20" y="300" width="374" height="25"/>
+                                <rect key="frame" x="20" y="344" width="374" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="JIa-C2-RVC"/>
+                                    <constraint firstAttribute="height" constant="25" id="rJF-l9-jmi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-fJ-uIf">
-                                <rect key="frame" x="20" y="350" width="374" height="25"/>
+                                <rect key="frame" x="20" y="434" width="374" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="frE-jj-EYr"/>
+                                    <constraint firstAttribute="height" constant="25" id="MtQ-DG-6RP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mpM-qq-Vgc">
+                                <rect key="frame" x="20" y="544" width="374" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="MdT-I4-hnd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3Y-xc-DeK"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="H7a-fJ-uIf" firstAttribute="top" secondItem="1ST-Fq-Jjr" secondAttribute="bottom" constant="25" id="Pgi-cM-xEF"/>
-                            <constraint firstItem="H7a-fJ-uIf" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="Rfk-FJ-U0J"/>
-                            <constraint firstItem="1My-NH-aes" firstAttribute="top" secondItem="K3Y-xc-DeK" secondAttribute="top" constant="15" id="Tri-1k-v8Q"/>
-                            <constraint firstItem="1My-NH-aes" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="iXl-Wy-OHw"/>
-                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="1ST-Fq-Jjr" secondAttribute="trailing" constant="20" id="q05-EF-gF2"/>
-                            <constraint firstItem="1ST-Fq-Jjr" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="q5Q-at-h3y"/>
-                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="H7a-fJ-uIf" secondAttribute="trailing" constant="20" id="uY0-Wb-X3F"/>
-                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="1My-NH-aes" secondAttribute="trailing" constant="20" id="uzs-5G-fz3"/>
-                            <constraint firstItem="1ST-Fq-Jjr" firstAttribute="top" secondItem="1My-NH-aes" secondAttribute="bottom" constant="30" id="vYx-8b-EDz"/>
+                            <constraint firstItem="mpM-qq-Vgc" firstAttribute="top" secondItem="H7a-fJ-uIf" secondAttribute="bottom" constant="85" id="47q-DE-Gqy"/>
+                            <constraint firstItem="1My-NH-aes" firstAttribute="top" secondItem="K3Y-xc-DeK" secondAttribute="top" constant="50" id="MTH-Xe-VCD"/>
+                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="mpM-qq-Vgc" secondAttribute="trailing" constant="20" id="RA3-BF-BUQ"/>
+                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="1ST-Fq-Jjr" secondAttribute="trailing" constant="20" id="YFO-Jx-ZXq"/>
+                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="H7a-fJ-uIf" secondAttribute="trailing" constant="20" id="eMv-ch-KMB"/>
+                            <constraint firstItem="H7a-fJ-uIf" firstAttribute="top" secondItem="1ST-Fq-Jjr" secondAttribute="bottom" constant="65" id="lGp-Yw-CzT"/>
+                            <constraint firstItem="K3Y-xc-DeK" firstAttribute="trailing" secondItem="1My-NH-aes" secondAttribute="trailing" constant="20" id="pye-pD-0RK"/>
+                            <constraint firstItem="1ST-Fq-Jjr" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="q4L-O3-vmX"/>
+                            <constraint firstItem="1My-NH-aes" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="uWL-YT-j8n"/>
+                            <constraint firstItem="mpM-qq-Vgc" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="uyQ-5y-AFp"/>
+                            <constraint firstItem="H7a-fJ-uIf" firstAttribute="leading" secondItem="K3Y-xc-DeK" secondAttribute="leading" constant="20" id="xGr-xS-Rls"/>
+                            <constraint firstItem="1ST-Fq-Jjr" firstAttribute="top" secondItem="1My-NH-aes" secondAttribute="bottom" constant="30" id="xy7-Dw-djF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="img" destination="1My-NH-aes" id="A9Y-i8-NZ0"/>
+                        <outlet property="img2" destination="mpM-qq-Vgc" id="Ht6-JA-f8c"/>
                         <outlet property="label1" destination="1ST-Fq-Jjr" id="qUu-N0-mpd"/>
                         <outlet property="label2" destination="H7a-fJ-uIf" id="veD-Ap-qRJ"/>
                     </connections>
